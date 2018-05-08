@@ -1,0 +1,48 @@
+.sign-document {
+  width: 457px !important;
+
+  .sign-human-card-modal {
+    h1 {
+      color: #8f8f8f;
+      font-weight: 400;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+  
+    .sign-human-card-operations {
+      display: flex;
+  
+      .keystore-file {
+        margin: 0;
+        margin-right: 15px;
+        
+        label {
+          width: 124px;
+          cursor: pointer;
+          display: inline-block;
+          color: #222;
+          border: 1px solid gray;
+          background-color: #c3c3c3;
+          border-color: #bdbdbd;
+          padding: 10px 32px;
+          vertical-align: middle;
+          margin: 0;
+        }
+      }
+  
+      input[type=password] {
+        width: 180px;
+        font-size: 13px;
+        box-shadow: 0 1px 1px rgba(0,0,0,.1);
+        height: 39px;
+        padding: 0 10px;
+        border: 1px solid #e0e0e0;
+
+        &::-webkit-input-placeholder, 
+        &::-moz-placeholder {
+          color: #646464;
+        }
+      }
+    }
+  }
+}

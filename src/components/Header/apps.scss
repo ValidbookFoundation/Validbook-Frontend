@@ -1,0 +1,186 @@
+.shortcuts_container {
+  position: absolute;
+  top: 50px;
+  left: -188px;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.apps_list {
+  padding: 0 28px 28px;
+
+  h1 {
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+.arrow_qb,
+.arrow_pb {
+  border-color: transparent;
+  border-style: dashed dashed solid;
+  border-width: 0 8.5px 8.5px;
+  position: absolute;
+  left: 195px;
+  z-index: 1;
+  height: 0;
+  width: 0;
+}
+
+.arrow_qb {
+  border-bottom-color: rgba(0,0,0,.2);
+  top: -9px;
+}
+
+.arrow_pb {
+  border-bottom-color: #fff;
+  top: -8px;
+}
+
+.apps_row {
+  display: flex;
+  -ms-flex-pack: distribute;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 260px;
+  margin: 0 auto;
+}
+
+.nav-a {
+  position: relative;
+  text-decoration: none;
+  width: 84px;
+  text-align: center;
+  padding-top: 15px;
+  margin-bottom: 10px;
+  border: 1px solid transparent;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    border: 1px solid #e1e1e1;
+    outline: none;
+  }
+
+  span {
+    font-size: 12px;
+  }
+}
+
+.nav-li {
+  padding: 7px 0 5px;
+  cursor: pointer;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.nav-books,
+.nav-tokens,
+.nav-documents,
+.nav-people,
+.nav-photos,
+.nav-messages,
+.mail_icon,
+.wallet_icon,
+.drive_icon,
+.validbook_icon,
+.signature_icon,
+.wiki_icon,
+.forum_icon,
+.identity_icon,
+.arbitration_icon {
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 27px;
+    width: 35px;
+    margin-bottom: 3px;
+  }
+}
+
+.arbitration_icon:before {
+  background-image: url(../../img/Icons/arbitration.svg);
+}
+
+.signature_icon:before {
+  background-image: url(../../img/Icons/signature.svg);
+}
+
+.mail_icon:before {
+  background-image: url(../../img/Icons/email.svg);
+}
+.wallet_icon:before {
+  background-image: url(../../img/Icons/wallet.svg);
+}
+.drive_icon:before {
+  background-image: url(../../img/Icons/Drive.svg);
+}
+.validbook_icon:before {
+  background-image: url(../../img/Icons/validbook.svg);
+}
+
+.nav-books:before {
+  background: url(../../../img/Icons/books.svg);
+  width: 34px;
+}
+
+.nav-documents:before {
+  background: url("../../../img/Icons/documents.svg");
+  width: 23px;
+}
+
+.nav-people:before {
+  background: url("../../../img/Icons/people.svg");
+  width: 39px;
+}
+
+.nav-photos:before {
+  background: url("../../../img/Icons/photos.svg");
+  width: 34px;
+}
+
+.nav-messages:before {
+  background: url("../../../img/Icons/chat.svg");
+  width: 27px;
+}
+
+.wiki_icon:before {
+  background: url("../../../img/Icons/wiki.svg");
+}
+
+.forum_icon:before {
+  background: url("../../../img/Icons/forum.svg");
+}
+
+.identity_icon:before {
+  background: url("../../../img/Icons/identity.svg");
+}
+
+.show_more {
+  background: #f5f5f5;
+  cursor: pointer;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  width: 320px;
+}
+
+.new_shortcut_link {
+  height: 40;
+  line-height: 40px;
+  text-align: center;
+  font-size: 13px;
+  display: block;
+  color: rgba(0, 0, 0, .7);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

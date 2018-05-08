@@ -1,0 +1,134 @@
+@import '../../theme/vars';
+
+.bookstree {
+  width: 220px;
+  overflow: hidden;
+
+  .wrapper {
+    background-color: #E1E1E1;
+    width: 220px;
+  }
+
+  .wrapper-fixed {
+    position: fixed;
+    top: 115px;
+  }
+}
+
+.bookstree-title {
+  padding: 10px 10px 0 10px;
+  margin-bottom: 10px;
+  display: flex;
+
+  a {
+    font-weight: bold;;
+    font-size: 15px;
+    color: $gray;
+
+    &:hover, &:focus {
+      color: $gray;
+      text-decoration: none;
+    }
+  }
+}
+
+.create-new-book {
+  height: 13px;
+  width: 13px;
+}
+
+.create_new_book {
+  padding: 0 10px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  color: $gray;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.wrapper-popup {
+  position: relative;
+
+  &:hover {
+    .add-cover-book {
+      opacity: 0.8;
+    }
+  }
+
+  h4 {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .add-cover-book {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    span {
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+      display: block;
+      margin-top: 15px;
+    }
+
+    input {
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+      position: absolute;
+    }
+  }
+
+  img {
+    max-height: 120px;
+    max-width: 568px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.book-form {
+  .control-label {
+    padding-top: 0 !important;
+  }
+  .checkbox {
+    position: absolute;
+    left: 5px;
+
+    label {
+      padding-left: 0;
+    }
+
+    input[type="checkbox"] {
+      margin-left: 0;
+      height: 15px;
+      width: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .bookstree {
+    flex: 0 0 190px;
+
+    .wrapper {
+      width: 190px;
+      margin-left: -30px;
+    }
+  }
+}

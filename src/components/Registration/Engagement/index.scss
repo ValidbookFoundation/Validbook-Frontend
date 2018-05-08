@@ -1,0 +1,214 @@
+@import "../../../theme/vars";
+
+.engagement {
+  background: $default-bg;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100px;
+  position: absolute;
+}
+
+.engagement-wrap {
+  width: 670px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.engagement-steps {
+  display: flex;
+  position: relative;
+}
+
+.engagement-step-1, .engagement-step-2 {
+  width: 47%;
+  height: 68px;
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.engagement-step-1 {
+  position: relative;
+  background: #007ad1;
+  border-color: #007ad1;
+  border-left: 1px solid #007ad1;
+  color: #fff;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -39px;
+    top: -1px;
+    width: 42px;
+    height: 70px;
+    background: url('http://devianmbanks.validbook.org/images/engagement_steps/steps_transition.png') 0 0 no-repeat transparent;
+  }
+}
+
+.engagement-step-1-active {
+  &::after {
+    background-image: url('http://devianmbanks.validbook.org/images/engagement_steps/first_right_part.png');
+  }
+}
+
+.engagement-step-2 {
+  background: #fff;
+  position: absolute;
+  right: 0;
+  border-right: 1px solid #d6d6d6;
+}
+
+.engagement-step-title {
+  padding-top: 10px;
+  padding-left: 30px;
+
+  h3 {
+    font-size: 20px;
+    font-weight: bold;;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+.engagement-content {
+  background: #fff;
+  border: 1px solid #d6d6d6;
+  margin-top: 10px;
+}
+
+.engagement-content-title {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px 20px;
+  border: 0 none;
+  border-bottom: 1px solid #cacaca;
+}
+
+.engagement-label {
+  width: 140px;
+  float: left;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.control-label {
+  text-align: left !important;
+  margin-bottom: 0;
+  padding-top: 30px !important;
+}
+
+.engagement-element-wrapper {
+  width: 475px;
+  float: left;
+  margin-top: 20px;
+
+  .form-control {
+    height: 25px;
+    width: 96%;
+    padding: 4px 12px;
+  }
+
+  .engagement-form-select {
+    height: 25px;
+    box-sizing: content-box;
+  }
+
+  .engagement-form-select-small{
+     width: 63px;
+
+    //  position: absolute;
+    //  top: 20px;
+    //  padding: 4px 12px;
+    //  height: 25px;
+  }
+}
+
+.engagement-wrap-form {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 20px 18px 20px;
+}
+
+
+.engagement-element-wrapper-small {
+  width: 90px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.engagement-form-birth-date {
+  display: flex;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.engagement-form-birth-year {
+  //margin: -20px 0;
+}
+
+.engagement-wrap-btn {
+  display: flex;
+  padding-top: 40px;
+  margin-bottom: 80px;
+  flex-direction: column;
+  position: relative;
+}
+
+.engagement-btn {
+  cursor: pointer;
+  background: #4280ff;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 2px;
+  border: 0;
+  height: 30px;
+  width: 160px;
+  position: absolute;
+  right: 0;
+  //opacity: .65;
+  //
+  //&:hover {
+  //  opacity: 1;
+  //}
+}
+
+.engagement-btn-skip {
+  margin-top: 25px;
+  background: linear-gradient(to top, #f5f5f5, #f1f1f1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #444;
+  opacity: 1;
+}
+
+
+.engagement-wrap-user-img {
+  margin-top: 15px;
+}
+
+.engagement-user-avatar {
+  display: block;
+  border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+
+  .engagement-element-wrapper-small {
+    position: absolute;
+    top: 45px;
+  }
+
+  .engagement-btn {
+    width: 130px;
+  }
+
+  .engagement-form-birth-date {
+    padding-bottom: 40px;
+  }
+
+  .engagement-wrap-form {
+    padding: 5px 15px 18px 15px;
+  }
+
+}

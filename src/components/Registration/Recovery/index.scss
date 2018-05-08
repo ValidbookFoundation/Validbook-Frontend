@@ -1,0 +1,19 @@
+@import "../../../theme/vars";
+
+.recovery {
+  .registration-wrap-form {
+    margin: 10px 0;
+  }
+}
+
+
+.recovery-help {
+  margin: 20px 0;
+  padding-top: 5px;
+  font-size: 13px;
+  width: 100%;
+  border-top: 1px solid $border-color;
+  a {
+    color: $link-color;
+  }
+}

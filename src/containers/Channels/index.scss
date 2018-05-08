@@ -1,0 +1,43 @@
+.main-page {
+  padding: 20px 0;
+
+  > .wrapper {
+    display: flex;
+    width: 1070px;
+    margin: 0 auto;
+
+    > div {
+      float: left;
+    }
+
+    .mid-column {
+      display: flex;
+    }
+  }
+}
+
+
+.left-column {
+  width: 190px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  .leftpanel-menu {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    margin-bottom: 15px;
+  }
+}
+
+
+@media all and (max-width: 991px) {
+  .left-column {
+    display: none;
+  }
+
+  .follow-block {
+    display: none;
+  }
+
+}

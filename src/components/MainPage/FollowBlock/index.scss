@@ -1,0 +1,87 @@
+@import "../../../theme/vars";
+@import "../../../theme/mixins";
+
+.follow-block {
+  width: 287px;
+  height: 260px;
+  align-self: baseline;
+  background: #fff;
+  //border: 1px solid $border-color;
+  //box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+  @include material();
+
+  .wrapper {
+    padding: 15px;
+    padding-bottom: 20px;
+  }
+
+  .title {
+    //border-bottom: 1px solid #eee;
+    //padding-bottom: 10px;
+    @include title-medium-default();
+  }
+}
+
+.follow-people {
+  display: flex;
+  margin-top: 19px;
+
+  .remove-user-container {
+    margin-left: 10px;
+
+    .remove-icon {
+      margin-top: 5px;
+      display: block;
+      cursor: pointer;
+      width: 16px;
+      height: 16px;
+      background: url(../../img/Icons/close.svg);
+    }
+  }
+}
+
+.follow-people-link-img {
+  cursor: pointer;
+  //border: 1px solid $border-color;
+  height: 100%;
+
+  img {
+    //width: 32px;
+    //height: 32px;
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+}
+
+.follow-people-text {
+  padding-left: 13px;
+  padding-top: 7px;
+}
+
+.follow-people-text-user {
+  margin-bottom: 5px;
+
+  a {
+    width: 167px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: $default-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    display: block;
+  }
+}
+
+.follow-people-text-btn {
+  cursor: pointer;
+  font-size: 12px;
+  color: #404040;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

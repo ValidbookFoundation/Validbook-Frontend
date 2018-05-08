@@ -1,0 +1,109 @@
+.human-card-page {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  .left_side_container {
+    width: 322px;
+  }
+
+  .right_side_container {
+    margin-left: auto;
+  }
+
+  .card_claims_container {
+    position: relative;
+    margin-top: 20px;
+
+    .card_claims_header {
+      display: flex;
+      margin-bottom: 10px;
+      align-items: center;
+      position: relative;
+    }
+
+    h2 {
+      color: #8f8f8f;
+      font-weight: 400;
+      font-size: 14px;
+      margin-right: 10px;
+      vertical-align: center;
+    }
+
+    .help_icon {
+      left: 100px;
+      display: block;
+      background-image: url(../img/Icons/help.svg);
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
+      
+      &:hover {
+        .block-additional {
+          display: block;
+          top: -34px;
+        }
+      }
+    }
+  }
+  
+  .add-new-claim {
+    width: 36px;
+    height: 36px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    span {
+      display: block;
+    }
+  
+    .add-new-claim-icon {
+      background-image: url(../img/Icons/AddClaim.svg);
+      width: 21px;
+      height: 16px;
+    }
+    
+    &:hover {
+      background-color: #CECECE;
+      
+      .block-additional {
+        display: block;
+        bottom: -34px;
+      }
+    }
+  }
+
+  .support_claims_list {
+    a,
+    img {
+      display: block;
+    }
+
+    a {
+      margin-bottom: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
+      img {
+        border-radius: 50%;
+        margin-right: 10px;
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    hr.devider {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: 0;
+      border-top: 1px solid #e1e1e1;
+    }
+  }
+}

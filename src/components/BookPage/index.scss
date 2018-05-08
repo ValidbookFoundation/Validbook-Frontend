@@ -1,0 +1,519 @@
+@import "../../theme/vars";
+
+.book-nav {
+  a {
+    &:hover,
+    &.active {
+      text-decoration: none;
+      border-bottom: 0;
+    }
+  }
+  ul {
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.subbooks-icon {
+  background: url("../../img/Icons/subbooks.svg");
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  margin-right: 5px;
+}
+
+.infobloks-book {
+  background: #fff;
+  min-height: 80px;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+  padding: 10px 15px 8px;
+  border-radius: 2px;
+  border-bottom-right-radius: 0;
+  border: none;
+  box-sizing: border-box;
+
+  &:hover {
+    .book-settings {
+      display: flex;
+    }
+    .book-settings-edit {
+      display: block;
+    }
+  }
+
+  .title-infoblocks {
+    padding: 15px 0;
+
+    span {
+      font-size: 12px;
+      color: #999;
+    }
+  }
+
+  .photos-gallery {
+    margin: 0 -15px;
+  }
+
+  .user {
+    display: flex;
+
+    img {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      width: 27px;
+      height: 27px;
+    }
+
+    span {
+      padding-left: 8px;
+      font-size: 14px;
+      line-height: 28px;
+    }
+
+    &:focus {
+      text-decoration: none;
+      color: #333;
+    }
+  }
+
+  .title {
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      font-size: 30px;
+      font-weight: 500;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 290px;
+      display: inline-block;
+      line-height: 30px;
+      color: #555;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .book-description {
+    margin-top: 10px;
+    div {
+      font-size: 14px;
+      overflow: hidden;
+      width: 290px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: #555;
+    }
+  }
+
+  .book-counter {
+    margin-top: 10px;
+    color: #555;
+
+    ul {
+      display: flex;
+      position: relative;
+    }
+
+    li {
+      font-size: 12px;
+      padding: 0;
+
+      span {
+        margin-left: 5px;
+      }
+    }
+
+    .followers {
+      a {
+        display: inline-block;
+        padding-right: 5px;
+
+        img {
+          width: 23px;
+          height: 23px;
+        }
+      }
+    }
+
+    .book-counter-subbooks {
+      border: 1px solid transparent;
+      position: absolute;
+      left: 148px;
+      top: -1px;
+    }
+
+    .photos {
+      img {
+        padding-right: 5px;
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+
+  .infobook-icon-visibility {
+    background: url("../../img/Icons/book.svg");
+    display: inline-block;
+    position: relative;
+    height: 10px;
+    width: 12px;
+    top: 1px;
+    margin-right: 5px;
+  }
+
+  .btn-following-book {
+    width: 135px;
+    height: 25px;
+    margin: 15px 0px 10px;
+
+    > div {
+      width: 110px;
+    }
+  }
+}
+
+.subbooks-icon-sm,
+.photos-icon-sm,
+.followers-icon-sm,
+.stories-icon-sm {
+  vertical-align: middle;
+  height: 12px;
+  display: inline-block;
+  margin: 0 8px 0 3px;
+}
+
+.subbooks-icon-sm {
+  background: url("../../img/Icons/subbooks-sm.svg") no-repeat;
+  width: 12px;
+}
+
+.photos-icon-sm {
+  background: url("../../img/Icons/photos-sm.svg") no-repeat;
+  width: 13px;
+}
+
+.followers-icon-sm {
+  background: url("../../img/Icons/people-sm.svg") no-repeat;
+  width: 14px;
+}
+
+.stories-icon-sm {
+  background: url("../../img/Icons/stories-sm.svg") no-repeat;
+  width: 8px;
+}
+
+.books-photos-gallery {
+  img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.books-followers-gallery {
+  padding-bottom: 5px;
+
+  img {
+    width: 32px;
+    height: 32px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding-bottom: 0;
+  }
+}
+
+.infobloks-book-others {
+  padding-top: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+
+  .list-subbooks {
+    color: #555;
+
+    li {
+      font-size: 14px;
+      padding: 6px 3px 6px 0;
+    }
+
+    i {
+      display: inline-block;
+      background: $sprite;
+      background-position: -86px -515px;
+      height: 15px;
+      width: 16px;
+      top: 3px;
+      margin-right: 5px;
+      left: 0;
+      position: relative;
+    }
+
+    a {
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
+.navigation-bookpage-fixed {
+  width: 1130px;
+  left: calc(50% - 565px);
+}
+
+.infobloks-book-fixed {
+  position: fixed;
+  top: 52px;
+  width: 320px;
+  box-sizing: border-box;
+}
+
+.wrapper-infoblock {
+  width: 320px;
+  position: fixed;
+  top: 112px;
+}
+
+.book-info {
+  ul {
+    list-style: none;
+    width: 200px;
+
+    li {
+      display: inline-block;
+      padding: 3px 3px 0 3px;
+      margin-right: 5px;
+    }
+  }
+
+  hr {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+.coverBook {
+  height: 130px;
+  margin: 0 -15px;
+  background-size: cover;
+  background-position: center;
+}
+
+.book-icon-visibility,
+.book-icon-stories,
+.book-icon-subbooks,
+.book-icon-followers {
+  &::before {
+    content: "";
+    display: inline-block;
+    background: $sprite;
+    margin-right: 3px;
+  }
+}
+.book-icon-visibility {
+  &::before {
+    background-position: 0px -257px;
+    width: 16px;
+    height: 16px;
+    margin-left: 2px;
+    position: relative;
+    top: 2px;
+  }
+}
+.book-icon-stories {
+  &::before {
+    background-position: -16px -239px;
+    width: 14px;
+    height: 16px;
+    margin-right: 5px;
+  }
+}
+.book-icon-subbooks {
+  &::before {
+    background-position: -30px -135px;
+    width: 16px;
+    height: 16px;
+  }
+}
+.book-icon-followers {
+  &::before {
+    background-position: -61px -97px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.book-quantity {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $gray;
+  margin: 10px 0;
+}
+
+.book-settings {
+  display: none;
+  position: relative;
+}
+.book_settings_icon_container {
+  position: absolute;
+  right: 13px;
+  padding: 8px;
+
+  &:hover {
+    .book_settings_edit_icon {
+      visibility: visible;
+    }
+  }
+}
+.book_settings_edit_icon {
+  cursor: pointer;
+  background: $sprite;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-position: -160px -226px;
+  visibility: hidden;
+}
+
+.bookPage-1170 {
+  width: 1130px;
+  margin: 0 auto;
+  display: flex;
+  background: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+
+  .infobloks-book {
+    position: relative;
+
+    &:hover {
+      .book-counter-with-subbooks {
+        border-radius: 2px;
+        color: transparent;
+        padding: 2px 0;
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.4);
+        height: 18px;
+        box-sizing: content-box;
+        position: absolute;
+        left: 148px;
+        top: -3px;
+        background: #fff;
+        cursor: pointer;
+
+        span {
+          color: #555;
+        }
+      }
+    }
+
+    footer {
+      bottom: 10px;
+      position: absolute;
+      width: 290px;
+    }
+  }
+}
+
+.subheader-bookpage {
+  width: 810px;
+  height: 281px;
+  background-size: cover;
+
+  &:hover {
+    .subHeader-cover {
+      opacity: 1;
+    }
+  }
+
+  .subHeader-cover {
+    left: calc(50% - 240px);
+    opacity: 0;
+    top: 70px;
+  }
+}
+
+.wrapper-bookpage-fixed {
+  position: fixed;
+  top: 112px;
+}
+
+.book-subbooks {
+  margin: 8px 0;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.book-list-label {
+  padding-top: 0 !important;
+  strong {
+    font-weight: normal;
+  }
+}
+
+.book-element-wrapper {
+  padding-bottom: 10px;
+  .radio {
+    min-height: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+.bookpage-subbooks-card {
+  width: 810px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .infobloks-book {
+    padding: 10px 7px 8px;
+  }
+}
+
+// start Book Access Settings
+.book_access_settings {
+  margin-top: 20px;
+
+  h2 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .setting_title {
+    width: 240px;
+    display: block;
+  }
+
+  .md-selection-control-container {
+    display: inline-block;
+  }
+
+  .md-fake-btn {
+    box-sizing: border-box;
+
+    .md-icon {
+      font-size: 20px;
+    }
+  }
+  
+  .setting_item {
+    display: flex;
+    align-items: center;
+  }
+}

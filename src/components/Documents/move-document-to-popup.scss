@@ -1,0 +1,172 @@
+.move-document-to-container {
+  width: 248px;
+  height: 311px;
+  visibility: visible;
+  left: 0px;
+  top: 212px;
+  border: 1px solid rgba(0,0,0,.2);
+  margin-top: 9px;
+  overflow: visible;
+  color: #000;
+  min-width: 230px;
+  min-height: 30px;
+  padding: 0;
+  position: absolute;
+  transition: opacity .218s;
+  background: #fff;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
+
+  .move-to-header-container {
+    height: 49px;
+    background-color: #f1f1f1;
+    position: relative;
+
+    .move-to-header {
+      padding: 4px 15px 4px 4px;
+      display: flex;
+      align-items: center;
+
+      .arrow-left-container {
+        cursor: pointer;
+        border-radius: 50%;
+        min-width: 0;
+        overflow: visible;
+        height: 40px;
+        width: 40px;
+        margin-right: 3px;
+
+        .arrow-left-icon {
+          width: 15px;
+          height: 15px;
+          background: url(../../img/Icons/arrow-left.svg) no-repeat;
+          margin: 12px;
+        }
+
+        &:hover {
+          background: rgba(0,0,0,.12);
+        }
+      }
+
+      h1 {
+        color: 777;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0;
+      }
+    }
+  }
+
+  .boxes-container {
+    position: absolute;
+    top: 49px;
+    bottom: 62px;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+
+    .popup-box-item {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+
+      &:hover {
+        background-color: #d8d8d8;
+      }
+      
+      .backup-folder-icon {
+        background: url(../../img/Icons/move-to/folder_signed_docs.svg);
+        width: 15px;
+        height: 11px;
+        margin-left: 5px;
+        margin-right: 10px;
+      }
+
+      .simple-folder-icon {
+        background: url(../../img/Icons/move-to/folder.svg);
+        width: 15px;
+        height: 11px;
+        margin-left: 5px;
+        margin-right: 10px;
+      }
+      
+      .chevron-right-container {
+        cursor: pointer;
+        height: 24px;
+        width: 24px;
+
+        .chevron-right-icon {
+          background: url(../../img/Icons/chevron-right.svg) no-repeat;
+          margin-left: auto;
+          width: 7px;
+          height: 12px;
+          margin: 6px auto;
+        }
+
+        &:hover {
+          background-color: #c4c4c4;
+          border-radius: 2px;
+        }
+      }
+
+      .folder-name {
+        overflow: hidden;
+        width: 168px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .popup-document-item {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      opacity: 0.5;
+
+      .document-icon {
+        background: url(../../img/Icons/file-document-box.svg) no-repeat;
+        width: 14px;
+        height: 14px;
+        margin-left: 5px;
+        margin-right: 10px;
+      }
+      
+      .document-name {
+        overflow: hidden;
+        width: 168px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  .move-to-footer {
+    border-top: 1px solid #e4e4e4;
+    height: 29px;
+    position: absolute;
+    padding: 16px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .add-folder-container {
+      cursor: pointer;
+      height: 37px;
+      width: 37px;
+      border-radius: 2px;
+
+      .add-folder-icon {
+        margin: 11px 10px;
+        width: 18px;
+        height: 14px;
+        background: url(../../img/Icons/folder-plus.svg);
+      }
+
+      &:hover {
+        background-color: #d8d8d8;
+      }
+    }
+  }
+}

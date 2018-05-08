@@ -1,0 +1,98 @@
+.document-dropdown-menu {
+  width: 315px;
+  border: none;
+  top: -212px;
+  left: 28px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: rgba(255,255,255,.9) 0px 1px 0px inset, rgba(0,0,0,.03) 0px -1px 0px inset, rgba(0,0,0,.2) 0px 1px 3px;
+  font-weight: normal;
+  padding: 0;
+  z-index: 1;
+  
+  .document-dropdown-menu-container {
+    padding: 15px 0;
+
+    hr {
+      margin: 5px 0;
+    }
+
+    div {
+      padding: 6px 26px;
+      height: 22px;
+      display: flex;
+      align-items: center;
+
+      span {
+        margin: 0;
+        font-weight: normal;
+        color: #000;
+        display: inline-block;
+      }
+      
+      span[class] {
+        margin-right: 20px;
+      }
+
+      .open-icon {
+        background: url(../img/Icons/document-item/open.svg) no-repeat;
+        height: 18px;
+        width: 18px;
+      }
+
+      .share-icon {
+        background: url(../img/Icons/document-item/share.svg) no-repeat;
+        height: 13px;
+        width: 18px;
+      }
+
+      .move-to-icon {
+        background: url(../img/Icons/document-item/move-to.svg) no-repeat;
+        height: 14px;
+        width: 18px;
+      }
+
+      .make-copy-icon {
+        background: url(../img/Icons/document-item/copy.svg) no-repeat;
+        height: 18px;
+        width: 18px;
+      }
+
+      .rename-icon {
+        background: url(../img/Icons/document-item/rename.svg) no-repeat;
+        height: 18px;
+        width: 18px;
+      }
+
+      .download-icon {
+        background: url(../img/Icons/document-item/download.svg) no-repeat;
+        height: 18px;
+        width: 18px;
+      }
+
+      .verify-icon {
+        background: url(../img/Icons/document-item/verify2.svg) no-repeat;
+        height: 18px;
+        width: 18px;
+      }
+
+      .sign-icon {
+        background: url(../img/Icons/document-item/sign.svg) no-repeat;
+        height: 18px;
+        width: 16px;
+      }
+
+      .delete-icon {
+        background: url(../img/Icons/document-item/delete.svg) no-repeat;
+        height: 18px;
+        width: 18px;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: #dfdfdf;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.tweet-modal-body {
+  .open-tweet-in-new-tab {
+    margin-bottom: 5px;
+
+    .open-in-new-tab-icon {
+      display: inline-block;
+      background: url(../../img/Icons/open-in-new.svg) no-repeat;
+      width: 13px;
+      height: 13px;
+      margin-right: 3px;
+    }
+
+    a {
+      color: #1E88E5;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  textarea {
+    font-family: "Source Code Pro",Menlo,Monaco,Consolas,"Courier New",monospace;
+    background-color: #eee;
+    line-height: 1.42857;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 5px;
+    width: 98%;
+    height: 108px;
+  }
+}

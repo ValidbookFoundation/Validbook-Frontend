@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Gravit.io -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   style="isolation:isolate"
+   viewBox="0 0 9.5895966 11.000001"
+   width="9.5895967"
+   height="11.000001"
+   version="1.1"
+   id="svg918"
+   sodipodi:docname="signed-documents.svg"
+   inkscape:version="0.92.2 (unknown)">
+  <metadata
+     id="metadata922">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     id="namedview920"
+     showgrid="false"
+     inkscape:zoom="60.817089"
+     inkscape:cx="6.0694636"
+     inkscape:cy="6.0985107"
+     inkscape:window-x="1366"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg918" />
+  <defs
+     id="defs909">
+    <clipPath
+       id="_clipPath_OLyqSwn9QUzVPWnT6ZqIQ7A9Z32lgIed">
+      <rect
+         width="148.229"
+         height="170.03"
+         id="rect906"
+         x="0"
+         y="0" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#_clipPath_OLyqSwn9QUzVPWnT6ZqIQ7A9Z32lgIed)"
+     id="g916"
+     transform="scale(0.06469447)">
+    <g
+       id="Group">
+      <path
+         d="M 8.277,106.876 0,147.752 41.008,139.502 113.901,66.846 81.17,34.222 Z M 115.497,0 91.702,23.719 l 32.73,32.624 23.797,-23.719 z"
+         id="path911"
+         inkscape:connector-curvature="0"
+         style="fill:#acb3bd" />
+      <rect
+         x="0"
+         y="157"
+         width="148.229"
+         height="13.03"
+         id="rect913"
+         style="fill:#acb3bd" />
+    </g>
+  </g>
+</svg>

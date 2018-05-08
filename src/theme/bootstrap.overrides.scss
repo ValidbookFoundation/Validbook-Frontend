@@ -1,0 +1,47 @@
+/**
+ * Override Bootstrap styles that you can't modify via variables here.
+ *
+ */
+
+.navbar-brand {
+  position: relative;
+  padding-left: 50px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #33e0ff;
+  background-color: transparent;
+}
+
+
+div[role="dialog"] {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  
+  .modal-dialog {
+    width: 615px;
+
+    .modal-content {
+      padding: 24px;
+    }
+  
+    .modal-header {
+      padding: 0;
+      margin-bottom: 30px;
+      border-bottom: none;
+    }
+  
+    .modal-body {
+      padding: 0;
+      margin-bottom: 24px;
+    }
+  
+    .modal-footer {
+      padding: 0;
+      border-top: none;
+    }
+  }
+}

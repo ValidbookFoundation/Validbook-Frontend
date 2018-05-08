@@ -1,0 +1,26 @@
+.facebook-post {
+  
+  .facebook-post-body {
+    p {
+      margin: 0 0 15px;
+    }
+  
+    .public-post {
+  
+      .public-post-gif {
+        background: url(../../img/facebook_post.gif) no-repeat;
+        width: 115px;
+        height: 138px;
+        margin: auto;
+      }
+    }
+    
+    .facebook-login {
+      margin: auto;
+      background-image: url(../../img/continue_with_facebook.png);
+      width: 248px;
+      height: 41px;
+      cursor: pointer;
+    }
+  }
+}

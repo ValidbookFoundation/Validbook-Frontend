@@ -1,0 +1,99 @@
+.linked-digital-properties {
+  font-size: 13px;
+  margin-top: 10px;
+  
+  .properties-list {
+
+    .social-item-container {
+      display: flex;
+      margin-bottom: 8px;
+
+      .twitter-icon-not-identity,
+      .facebook-icon-not-identity,
+      .twitter-icon, 
+      .facebook-icon {
+        display: inline-block;
+        color: #777;
+        font-weight: normal;
+        height: 16px;
+        width: 16px;
+        margin-right: 12px;
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+
+      .twitter-icon {
+        background: url('../img/Icons/twitter-box.svg') no-repeat;
+      }
+      
+      .facebook-icon {
+        background: url('../img/Icons/facebook-box.svg') no-repeat;
+      }
+
+      .facebook-icon-not-identity {
+        background: url('../img/Icons/facebook-box-not-identity.svg') no-repeat;
+      }
+      
+      .twitter-icon-not-identity {
+        background: url('../img/Icons/twitter-box-not-identity.svg') no-repeat;
+      }
+
+      .property-not-identity {
+        color: #acacac;
+
+        &:hover {
+          color: #6e6e6e;
+        }
+      }
+        
+      a {
+        margin-right: 9px;
+        color: #33a0ff;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .property-identify-operations, .property-not-identify-operations {
+        margin-right: 0;
+        position: relative;
+        
+        .linked-properties-operations-container {
+          box-shadow: rgba(255, 255, 255, 0.9) 0px 1px 0px inset, rgba(0, 0, 0, 0.03) 0px -1px 0px inset, rgba(0, 0, 0, 0.2) 0px 1px 3px;
+          border-radius: 2px;
+          position: absolute;
+          width: 180px;
+          padding: 15px 0;
+          background-color: #fff;
+          left: -66px;
+          z-index: 1;
+          font-size: 14px;
+
+          .linked-properties-operations {
+            li {
+              padding: 6px 26px;
+              color: #333333;
+              
+              &:hover {
+                background-color: #dfdfdf;
+              }
+            }
+          }
+        }
+      }
+
+      .property-identify-operations{
+        color: #a8d7ff;
+      }
+
+      .property-not-identify-operations {
+        color: #ff4d61;
+      }
+    }
+  }
+}

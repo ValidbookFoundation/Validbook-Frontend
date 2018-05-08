@@ -1,0 +1,196 @@
+@import "../../theme/vars";
+
+.navigation {
+  width: 100%;
+  height: 46px;
+  margin: 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+  position: relative;
+  display: flex;
+  background: #fafafa;
+
+  .btn-following {
+    position: absolute;
+    right: 0;
+    top: -5px;
+  }
+
+  .edit_profile {
+    width: 85px;
+
+    a {
+      margin: auto;
+      display: block;
+      color: #999;
+    }
+  }
+
+  .btn-following-book {
+    width: 135px;
+    height: 25px;
+    right: calc(50% - 555px) !important;
+
+    > div {
+      width: 110px;
+    }
+  }
+
+  .btn-message {
+    right: calc(50% - 445px);
+    width: 85px;
+
+    a {
+      width: 100%;
+
+      &:hover {
+        color: #333;
+      }
+    }
+
+    div {
+      position: relative;
+    }
+
+    i {
+      background: url('../../img/Icons/chat-sm.svg');
+      height: 15px;
+      width: 15px;
+      display: inline-block;
+      left: 12px;
+      top: 4px;
+      position: relative;
+    }
+  }
+
+  .navigation-wrap {
+    position: absolute;
+    left: 340px;
+  }
+}
+
+.wrapper-navigation{
+  width: 1130px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.navigation-wrap {
+  position: absolute;
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 16px 7px 27px;
+    color: #555;
+    font-size: 16px;
+    line-height: 16px;
+    height: 30px;
+    box-sizing: border-box;
+
+    &:hover, &.active {
+      cursor: pointer;
+      text-decoration: none;
+      border-bottom: 3px solid;
+      border-color: inherit;
+    }
+  }
+}
+
+.navigation-bookpage {
+  z-index: 11;
+  height: 90px;
+  display: none;
+
+  .book-nav {
+    margin: 0 auto;
+    margin-top: 37px;
+    position: static;
+
+    a {
+      font-size: 40px;
+    }
+  }
+
+  .navigation-infouser {
+    top: 22px;
+  }
+
+  .btn-following-book {
+    top: 15px;
+  }
+}
+
+.navigation-fixed {
+  position: fixed;
+  top: 52px;
+  z-index: 11;
+
+  .book-nav {
+
+    a {
+      font-size: 24px;
+    }
+  }
+}
+
+/* === NavigationInfoUser Start === */
+.navigation-infouser {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  min-width: 226px;
+  max-width: 340px;
+
+  img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  span {
+    cursor: pointer;
+    font-size: 18px;
+    color: #444;
+    align-self: center;
+    margin-left: 7px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.navigation-infouser-book {
+  img {
+    margin: 9px 5px;
+    width: 27px;
+    height: 27px;
+  }
+
+  span {
+    font-size: 16px;
+  }
+}
+
+.navigation-infouser-book-fixed {
+  top: 4px;
+  position: absolute;
+
+  img {
+    margin: 6px 0 0 14px;
+    width: 27px;
+    height: 27px;
+  }
+
+  span {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+}
+
+.navigation-infouser-none {
+  display: none;
+}
+/* === NavigationInfoUser End === */

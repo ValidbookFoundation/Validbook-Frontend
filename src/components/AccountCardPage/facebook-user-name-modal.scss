@@ -1,0 +1,45 @@
+.facebook-username {
+  width: 566px !important;
+
+  .facebook-user-name-modal-body {
+    
+    .open-in-new-tab {
+      margin-bottom: 5px;
+  
+      .open-in-new-tab-icon {
+        display: inline-block;
+        background: url(../../img/Icons/open-in-new.svg) no-repeat;
+        width: 13px;
+        height: 13px;
+        margin: 0 3px;
+      }
+  
+      a {
+        color: #1E88E5;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  
+    .user-name-field {
+      width: 100%;
+      
+      input {
+        padding: 1px 8px;
+        height: 27px;
+        width: 498px;
+        font-size: 14px;
+        line-height: 1.42857;
+        color: #555555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.custom_visibility {
+  .modal-dialog {
+    width: 461px !important;
+  }
+
+  .add_user_container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .input_label {
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-right: 5px;
+    width: 70px;
+  }
+
+  .info_text {
+    font-size: 12px;
+    text-align: right;
+    color: #888;
+    margin-top: 3px;
+  }
+}

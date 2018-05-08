@@ -1,0 +1,130 @@
+.footer_container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fafafa;
+  height: 104px;
+  display: flex;
+  align-items: center;
+
+  .footer {
+    position: relative;
+    width: 1130px;
+    margin: 0 auto;
+
+    @mixin rangeThumb {
+      width: 18px;
+      height: 18px;
+      margin: -8px 0 0;
+      border-radius: 50%;
+      background: #1870c8;
+      cursor: pointer;
+      border: 0 !important;
+      transition: all .3s;
+    }
+    
+    @mixin rangeTrack {
+      width: 100%;
+      height: 2px;
+      cursor: pointer;
+      background: #b2b2b2;
+    }
+
+    .range {
+      height: 40px;
+    }
+
+    input {
+      max-width: 1130px;
+      position: absolute;
+      top: 4px;
+      cursor: pointer;
+      height: 32px;
+      background-color: transparent;
+      -webkit-appearance: none;
+
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        @include rangeThumb;
+      }
+
+      &::-moz-range-thumb {
+        @include rangeThumb;
+      }
+
+      &::-ms-thumb {
+        @include rangeThumb;
+      }
+
+      &::-webkit-slider-runnable-track {
+        @include rangeTrack;
+      }
+
+      &::-moz-range-track {
+        @include rangeTrack;
+      }
+
+      &::-ms-track {
+        @include rangeTrack;
+      }
+
+      &:focus {
+        background: none;
+        outline: none;
+      }
+
+      &::-ms-track {
+        width: 100%;
+        background: transparent;
+        border-color: transparent;
+        color: transparent;
+      }
+    }
+  }
+
+  .slider_values {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 4px;
+
+    & :first-child,
+    & :last-child,
+    & :nth-child(2),
+    & :nth-child(3) {
+      width: 2px;
+      height: 32px;
+      background-color: #b2b2b2;
+    }
+
+    & :last-child {
+      position: absolute;
+      left: 1129px;
+    }
+
+    & :nth-child(2),
+    & :nth-child(3) {
+      height: 14px;
+    }
+
+    & :nth-child(2) {
+      position: absolute;
+      left: 90px;
+    }
+
+    & :nth-child(3) {
+      position: absolute;
+      left: 1040px;
+    }
+  }
+
+  .sign_arbitrt_value {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  button {
+    margin-left: 20px;
+  }
+}

@@ -1,0 +1,145 @@
+.account_card_container {
+  .human-card-sign-success-container {
+    position: fixed;
+    top: 52px;
+    width: 100%;
+    left: 0;
+    z-index: 12;
+    background: #66bb6a;
+
+    .human-card-sign-success {
+      max-width: 1130px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 52px;
+
+      span {
+        color: #fff;
+        display: block;
+      }
+
+      button {
+        width: 32px;
+        height: 32px;
+        position: relative;
+        left: 6px;
+        outline: none;
+        border: none;
+        background: 0 0;
+
+        .close-sign-icon {
+          margin: auto;
+          background: url(../../img/Icons/close-white.svg) no-repeat;
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+
+  .human-card {
+    display: inline-block;
+    margin-bottom: 20px;
+    height: 150px;
+    width: 290px;
+    padding: 0 15px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+    border: 1px solid #dadada;
+    position: relative;
+
+    .account_card_icons {
+      position: absolute;
+      display: flex;
+      right: 14px;
+      top: 13px;
+      align-items: center;
+
+      .human-icon {
+        background: url(../../img/Icons/human.svg);
+        height: 14px;
+        width: 13px;
+      }
+
+      .account_card_operations_icon_container {
+        margin-left: 5px;
+        height: 19px;
+
+        svg {
+          &:hover {
+            cursor: pointer;
+
+            path {
+              fill: #000;
+            }
+          }
+        }
+
+        .human-card-operations {
+          box-shadow: rgba(255, 255, 255, 0.9) 0px 1px 0px inset,
+            rgba(0, 0, 0, 0.03) 0px -1px 0px inset,
+            rgba(0, 0, 0, 0.2) 0px 1px 3px;
+          border-radius: 2px;
+          top: 33px;
+          z-index: 1;
+          position: absolute;
+          min-width: 180px;
+          padding: 15px 0;
+          background-color: #fff;
+
+          div {
+            padding: 6px 26px;
+            height: 22px;
+            display: flex;
+            align-items: center;
+
+            span {
+              display: inline-block;
+              margin-right: 20px;
+            }
+
+            .download-icon {
+              background: url(../img/Icons/document-item/download.svg) no-repeat;
+              height: 18px;
+              width: 18px;
+            }
+
+            .delete-icon {
+              background: url(../img/Icons/document-item/delete.svg) no-repeat;
+              height: 18px;
+              width: 18px;
+            }
+
+            &:hover {
+              cursor: pointer;
+              background-color: #dfdfdf;
+            }
+          }
+        }
+      }
+    }
+
+    h1 {
+      display: inline-block;
+      font-weight: 500;
+      font-size: 14px;
+      margin: 15px 0 18px;
+    }
+
+    h2 {
+      margin: 20px 0 2px;
+      font-size: 20px;
+      font-weight: normal;
+      // cursor: text;
+    }
+
+    p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 12px;
+    }
+  }
+}

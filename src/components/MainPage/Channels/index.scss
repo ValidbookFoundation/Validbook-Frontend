@@ -1,0 +1,85 @@
+@import "../../../theme/vars";
+@import "../../../theme/mixins";
+
+.channels {
+  position: fixed;
+
+  .sidebar {
+    width: 190px;
+
+    ul > a.active > li {
+      position: relative;
+      border-left: none;
+      padding-left: 15px;
+
+      .edit_icon {
+        visibility: visible;
+      }
+    }
+
+    ul {
+      a:focus {
+        outline: none;
+      }
+    }
+
+    .create_channel_link {
+      font-size: 10px;
+      color: #8F8F8F;
+    }
+
+    .edit_icon {
+      display: block;
+      background: url("../../../img/Icons/Design_(8).svg") no-repeat;
+      width: 11px;
+      height: 11px;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      visibility: hidden;
+    }
+
+    li {
+      width: 100%;
+      padding: 8px 0;
+      position: relative;
+      left: -15px;
+      padding-left: 15px;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        background: url(../../img/Icons/mashup_small.svg);
+        width: 14px;
+        height: 14px;
+        margin-right: 15px;
+        position: relative;
+        top: 2px;
+      }
+
+      &:hover {
+        .edit_icon {
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+/* === Add Channel === */
+.modal-channel {
+  .modal-body {
+    padding-top: 0;
+
+    .md-text-field-container {
+      width: 100%;
+      margin: 0;
+
+      #content {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+/* === Add Channel End === */

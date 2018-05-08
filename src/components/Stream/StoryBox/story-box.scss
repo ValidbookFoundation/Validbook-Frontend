@@ -1,0 +1,237 @@
+@import "../../../theme/vars";
+@import "../../../theme/mixins";
+
+.sbox {
+  background: #FFF;
+  margin-bottom: 20px;
+  position: relative;
+  @include material;
+
+  .rdw-editor-toolbar {
+    width: auto;
+  }
+
+  .rdw-option-wrapper {     //icons
+    min-width: 15px;
+    height: 15px;
+  }
+
+  .rdw-dropdown-wrapper {
+    height: 25px;
+  }
+
+  .rdw-block-dropdown {
+    width: 80px;
+  }
+
+  .rdw-list-dropdown,
+  .rdw-list-dropdown,
+  .rdw-link-dropdown {
+    width: 45px;
+  }
+
+  .btn-brand {
+    background: #5c96d0;
+  }
+
+  .md-selection-control-container {
+    display: flex;
+
+    label {
+      span {
+        display: flex;
+        align-items: center;
+
+        &:before {
+          background: $sprite;
+          display: inline-block;
+          height: 12px;
+          width: 13px;
+          margin-right: 5px;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+
+  label[for="quiet_log"] {
+    span:before {
+      content: '';
+      background-position: -162px -160px;
+    }
+  }
+
+  label[for="loud_log"] {
+    span:before {
+      content: '';
+      background-position: -163px -143px;
+    }
+  }
+
+  label[for="loud_book"] {
+    span:before {
+      content: '';
+      background-position: -170px -176px;
+      width: 14px;
+      margin-right: 4px;
+    }
+  }
+  label.md-text--disabled {
+    i {
+      opacity: 0.4;
+    }
+
+    span {
+      color: rgba(0, 0, 0, 0.87);
+    }
+  }
+}
+
+.wrapper-sbox {
+  min-height: 70px;
+}
+
+.toolbar-sbox {
+  display: none;
+  padding-left: 10px;
+  border: 0;
+  border-bottom: 1px solid $default-bg;
+  margin-bottom: 0;
+}
+
+.editor-sbox {
+  padding-left: 69px;
+  padding-top: 13px;
+  padding-right: 15px;
+}
+
+.sbox-user-avatar {
+  display: inline-block;
+  position: absolute;
+  left: 15px;
+
+  img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.sbox-footer {
+  background: #f5f5f5;
+  padding: 10px 20px;
+  border-top: 1px solid $border-color;
+  display: flex;
+  justify-content: space-between;
+
+  .btn-toolbar {
+    margin-right: auto;
+  }
+
+  .btn-brand {
+    min-width: 22px;
+    height: 13px;
+    background: #1870c8;
+    line-height: 13px;
+    border: 0;
+    padding: 5px 25px;
+    opacity: 1;
+
+    &:hover {
+      background: #1564b4;
+    }
+  }
+    
+  .material-icons {
+    cursor: pointer;
+    font-size: 20px;
+    color: #acb3bd;
+  }
+
+  .caret {
+    color: $gray;
+    cursor: pointer;
+    margin-right: 10px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .dropdown-menu {
+    padding: 11px 0;
+    z-index: 10;
+  }
+
+  .sbox-booktree {
+    width: 225px;
+    
+    .rstcustom__rowLabel {
+      input {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .bootstrap-pure-btn {
+    height: 12px;
+    line-height: 12px;
+    border: 1px solid $border-color;
+    font-size: 13px;
+    padding: 5px 0 5px 10px;
+    margin-left: 10px !important;
+    border-radius: 2px;
+    background-color: #fff;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #fff !important;
+      border: 1px solid $border-color;
+    }
+
+    &:active {
+      box-shadow: none !important;
+    }
+
+  }
+
+  .sbox-dropdown-btn {
+    display: flex;
+    padding: 5px 0 5px 5px;
+
+    span.caret {
+      margin-top: 5px;
+      margin-right: 5px;
+    }
+
+    .dropdown-btn-icon {
+      margin-top: -5px;
+      margin-right: 5px;
+    }
+
+    .loud_book_icon {
+      margin-top: 0;
+      margin-right: 5px;
+    }
+
+    .public_icon,
+    .private_icon,
+    .custom_icon {
+      margin-top: 0;
+    }
+  }
+
+  .btn-group.open .dropdown-toggle {
+    box-shadow: none !important;
+    background: #fff;
+  }
+
+  .btn-default:active, .btn-default.active,
+  .btn-default:active:hover,
+  .open > .btn-default.dropdown-toggle,
+  .open > .btn-default.dropdown-toggle:hover,
+  .open > .btn-default.dropdown-toggle:focus {
+    border: 1px solid $border-color;
+  }
+
+}

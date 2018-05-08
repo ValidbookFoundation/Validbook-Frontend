@@ -1,0 +1,23 @@
+.rename, .create-folder {
+  width: 395px;
+
+  .modal-body {
+    label {
+      color: #666;
+      font-size: 14px;
+    }
+  
+    .channel-form .channel-label {
+      padding-top: 0 !important;
+      font-weight: 300;
+    }
+    
+    .channel-element-wrapper {
+      .form-control {
+        height: 25px;
+        width: 327px;
+        padding: 1px 8px;
+      }
+    }
+  }
+}

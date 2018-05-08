@@ -1,0 +1,11 @@
+@import '../../theme/vars';
+
+.storyLine {
+  max-width: 1130px;
+  margin: 0 auto;
+  display: flex;
+
+  .stream {
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,27 @@
+@import "./vars";
+
+/* === Mixins === */
+@mixin title-medium-default($size: 16px) {
+  font: {
+    weight: 500;
+    size: $size;
+  }
+  color: $default-color;
+}
+
+@mixin title-nav {
+  font-weight: 500;
+  font-size: 13px;
+  color: $gray;
+  text-transform: uppercase;
+}
+
+@mixin material {
+  //border-radius: 1px;
+  //box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+  //border: 1px solid #D8D8D8;
+
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  border: none;
+}

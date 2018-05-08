@@ -1,0 +1,251 @@
+@import "../../theme/vars";
+
+#authorization {
+  background: url(../../img/graph.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  font-family: $font-Hind;
+
+  #shinglecontainer { 
+    position: static; 
+  } 
+
+  .auth-form {
+    z-index: 150;
+    position: relative;
+    width: 350px;
+    border-radius: 2px;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
+    padding: 15px 50px 30px;
+    background: #fff;
+    border: 2px solid #979798;
+    display: block;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+
+    /* start registration header */
+    header {
+      text-align: center;
+      margin-top: 3px;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+
+      h1 {
+        color: $brand;
+        font-family: $font-Montserrat;
+        text-decoration: none;
+        font-size: 55px;
+        letter-spacing: -2px;
+        display: block;
+        margin-bottom: -9px;
+        margin-top: 6px;
+        cursor: default;
+      }
+
+      p {
+        color: #000;
+        font-weight: 500;
+        font-size: 17px;
+        cursor: default;
+        display: block;
+        margin-left: 4px;
+        margin-top: 15px;
+      }
+    }
+    /* end registration header */
+
+    .devider {
+      width: 100%;
+      height: 1px;
+      background: $default-bg;
+      position: absolute;
+      right: 0;
+      margin: 0;
+      border: 0;
+    }
+
+    section {
+      margin: 50px 0 30px;
+
+      .signin-button,
+      .create-account-button,
+      .signup-button,
+      .download-button {
+        color: #fff;
+        font-size: 16px;
+        border-radius: 2px;
+        border: 0;
+        height: 43px;
+        padding: 0;
+        width: 335px;
+        display: block;
+        margin: 0 auto;
+      }
+      
+      a {
+        width: 335px;
+        margin: 10px auto;
+        display: block;
+        text-align: right;
+        color: #33a0ff;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      
+      div {
+        margin: auto;
+      }
+    }
+
+    section.main-window {
+
+      .signup-button {
+        background: #2E7D32;
+      }
+
+      .signin-button {
+        margin-bottom: 30px;
+        background: #094AB2;
+      }
+    }
+
+    section.signup-form {
+      margin-top: 50px;
+
+      div {
+        margin: auto;
+      }
+
+      .buttons-container {
+        margin-top: 30px;
+
+        .create-account-button {
+          margin-top: 30px;
+          background: #2E7D32;
+        }
+      }
+    }
+
+    section.signin-form {
+      margin-top: 78px;
+      position: relative;
+
+      .input-field {
+        margin-bottom: 24px;
+        input[type=file] {
+          display: none;
+        }
+
+        label {
+          font-size: 16px;
+          width: 269px;
+          cursor: pointer;
+          text-align: center;
+          color: #222;
+          border-radius: 2px;
+          border: 1px solid gray;
+          background-color: #c3c3c3;
+          border-color: #bdbdbd;
+          padding: 11px 32px;
+          vertical-align: middle;
+          margin: 0 auto;
+          display: block;
+        }
+      }
+
+      .buttons-container {
+        margin-top: 20px;
+
+        .signin-button {
+          background-color: #094AB2; 
+        }
+        
+        a {
+          text-align: right;
+        }
+      }
+
+      .block-additional {
+        font-size: 14px;
+        position: absolute;
+        display: block;
+        left: 50%;
+        margin-left: -63px;
+        height: 16px;
+      }
+    }
+
+    section.download-keystores {
+      text-align: center;
+
+      h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      button {
+        margin-bottom: 20px;
+      }
+
+      .signup-button {
+        margin-top: 30px;
+        background-color: #4d90fe;
+      }
+
+      div {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+
+    footer {
+      font-size: 13px;
+
+      p {
+        padding: 0 5px;
+        padding-top: 22px;
+        line-height: 22px;
+        color: #333;
+        text-align: center;
+
+        a {
+          color: #999;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  
+  .md-cell {
+    width: 335px;
+    height: 76px;
+    margin: 8px 8px 30px;
+  
+    .md-text--error {
+      color: #f44336;
+    }
+  
+    button {
+      i {
+        font-size: 20px;
+        color: rgba(0, 0, 0, .56);
+      }
+    }
+  }
+
+  .md-text-field-container--disabled {
+    .md-divider {
+      height: 0;
+      border-top: 1px dotted #e1e1e1;
+      background: none;
+    }
+  }
+}

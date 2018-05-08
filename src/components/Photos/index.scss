@@ -1,0 +1,32 @@
+//@import "../../styles/vars";
+
+.photos {
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 10;
+    position: relative;
+  }
+
+  .affix {
+    position: relative;
+    top: 100px;
+  }
+}
+
+
+.photo{
+  cursor: pointer;
+  height: 221px;
+  margin: 0 2px 2px 0;
+  
+  img {
+    width: 221px;
+    height: 221px;
+  }
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}

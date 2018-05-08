@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Gravit.io -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   style="isolation:isolate"
+   viewBox="0 0 16 16"
+   width="16"
+   height="16"
+   version="1.1"
+   id="svg879"
+   sodipodi:docname="apps.svg"
+   inkscape:version="0.92.2 (unknown)">
+  <metadata
+     id="metadata883">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     id="namedview881"
+     showgrid="false"
+     inkscape:zoom="40.393475"
+     inkscape:cx="8.6598413"
+     inkscape:cy="7.7938434"
+     inkscape:window-x="1366"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg879" />
+  <defs
+     id="defs872">
+    <clipPath
+       id="_clipPath_BD0S27gUzny1Xq0wSmhFR1s1hoZ27AdI">
+      <rect
+         width="16"
+         height="16"
+         id="rect869" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#_clipPath_BD0S27gUzny1Xq0wSmhFR1s1hoZ27AdI)"
+     id="g877"
+     style="fill:#d5d5d5;fill-opacity:1">
+    <g
+       id="apps"
+       style="fill:#d5d5d5;fill-opacity:1">
+      <path
+         d="M 0,4 H 4 V 0 H 0 Z m 6,12 h 4 V 12 H 6 Z M 0,16 H 4 V 12 H 0 Z M 0,10 H 4 V 6 H 0 Z m 6,0 h 4 V 6 H 6 Z M 12,0 v 4 h 4 V 0 Z M 6,4 h 4 V 0 H 6 Z m 6,6 h 4 V 6 h -4 z m 0,6 h 4 v -4 h -4 z"
+         id="path874"
+         inkscape:connector-curvature="0"
+         style="fill:#d5d5d5;fill-opacity:1" />
+    </g>
+  </g>
+</svg>

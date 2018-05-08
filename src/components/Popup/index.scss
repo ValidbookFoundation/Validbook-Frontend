@@ -1,0 +1,154 @@
+.avatar-popup {
+  .modal-dialog {
+    width: 400px;
+  }
+
+  .wrapper-loader {
+    position: absolute;
+    top: 160px;
+    left: 170px;
+
+    .loader .path {
+      stroke: #757575;
+    }
+  }
+}
+
+.user-cover-popup {
+  .wrapper-loader {
+    position: absolute;
+    top: 80px;
+    left: 275px;
+
+    .loader .path {
+      stroke: #757575;
+    }
+  }
+}
+
+.log-popup {
+  position: relative;
+  height: 100%;
+  top: -18px;
+}
+
+.delete-story-popup {
+  position: relative;
+  height: 100%;
+}
+
+.btn-log {
+  width: 72px;
+  line-height: 14px;
+  font-size: 14px;
+  color: #666;
+  background: #fff;
+  padding: 2px 8px;
+  border: 1px solid #D9D9D9;
+  position: absolute;
+  right: 0;
+}
+
+.booktree-for-log {
+  .react-tree-treenode-disabled > .react-tree-item-label span {
+    position: relative;
+  }
+
+  .icon_bin {
+    display: none;
+  }
+}
+
+.modal-log {
+  .modal-body {
+    padding: 15px 0;
+  }
+}
+
+.pin-body {
+  display: flex;
+  justify-content: space-between;
+
+  .pin-counter {
+    display: flex;
+
+    input {
+      width: 90px;
+      font-size: 14px;
+      border: 1px solid #A9A9A9;
+      padding: 3px 0 3px 6px;
+      height: 16px;
+      margin-right: 5px;
+    }
+
+    .plus,
+    .minus {
+      width: 29px;
+      height: 22px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .plus {
+      border: 1px solid green;
+    }
+
+    .minus {
+      border: 1px solid #bf0f0f;
+      margin-right: 5px;
+    }
+  }
+}
+
+/*=== Sign Human Card  Start===*/
+.sign-access-type {
+  width: 300px;
+}
+
+.keystore-file {
+  input {
+    display: none;
+  }
+
+  input + label {
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    color: #f1e5e6;
+    background-color: #989293;
+  }
+}
+/*=== Sign Human Card  End===*/
+
+.show-avatar-popup {
+  position: relative;
+  height: 100%;
+}
+
+.show_avatar_modal {
+  display: flex !important;
+
+  .modal-dialog {
+    width: auto !important;
+    
+    .modal-content {
+      background-color: transparent;
+      box-shadow: none;
+      border: none;
+    }
+  }
+
+  &:after {
+    content: '';
+    background: url(../img/Icons/close.svg);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: fixed;
+    top: 21px;
+    right: 21px;
+    cursor: pointer;
+  }
+}

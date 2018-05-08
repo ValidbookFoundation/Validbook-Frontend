@@ -1,0 +1,597 @@
+@import "../../theme/vars";
+
+.header_container {
+  background: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  padding: 6px 20px 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  width: 100%;
+  display: flex;
+  position: sticky;
+  height: 52px;
+  box-sizing: border-box;
+  z-index: 12;
+  top: 0;
+
+  .header_content {
+    display: flex;
+    margin: 0 auto;
+    height: 37px;
+    align-items: center;
+    position: relative;
+
+    .validbook_app {
+      position: relative;
+      top: 1px;
+      color: #555;
+      font-size: 26px;
+      font-weight: normal;
+      margin-left: 12px;
+    }
+
+    .social_app {
+      display: flex;
+      align-items: center;
+      flex-basis: 100%;
+    }
+  }
+
+  /* -- Logo Start  -- */
+  .logo {
+    
+    img {
+      width: 135px;
+      height: 35px;
+    }
+  }
+  /* -- Logo End  -- */
+}
+
+
+/* -- Loading Bar Start--*/
+.loading_bar_container {
+  height: 2px;
+  width: 100%;
+  background-color: #accbee;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+/* -- Loading Bar End--*/
+
+/* -- Channel Name Start  -- */
+.channel-name {
+  color: #666;
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 187px;
+
+  &:before {
+    content: "";
+    height: 26px;
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 1px solid #ddd;
+    margin: 7px 20px 14px 15px;
+  }
+}
+/* -- Channel Name End  -- */
+
+/* -- SearchField Start  -- */
+.search-field {
+  margin: 1px 20px 0 25px;
+  flex-basis: 100%;
+  height: 36px;
+
+  input {
+    border-radius: 2px;
+    box-sizing: border-box;
+    border: none;
+    background: #f5f5f5;
+    padding-left: 50px;
+    height: 37px;
+    font-size: 15px;
+    width: 100%;
+  }
+
+  input:focus {
+    outline-color: transparent;
+  }
+
+  span {
+    display: block;
+    background: $sprite -78px -19px;
+    height: 15px;
+    width: 15px;
+    position: relative;
+    left: 8px;
+    top: -26px;
+    margin-left: 10px;
+  }
+}
+/* -- SearchField End  -- */
+
+/* -- UserButtons Start  -- */
+.header-navigation {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: auto;
+
+  .bootstrap-pure-btn {
+    &:hover,
+    &:focus,
+    &:active {
+      //attention
+      background-color: transparent !important;
+      box-shadow: none !important;
+    }
+  }
+  
+  .apps_container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -8px;
+    margin-right: -12px;
+
+    .apps_icon_container {
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+
+      .apps_icon {
+        background: url(../img/Icons/apps.svg) no-repeat;
+        width: 16px;
+        height: 16px;
+        display: block;
+        margin: 8px;
+      }
+    }
+  }
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.bubble {
+  position: absolute;
+  z-index: 3;
+  font-size: 10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #c53929;
+  color: #ffffff;
+  border: 1px solid #fff;
+  top: 6px;
+  left: -12px;
+  text-align: center;
+
+  span {
+    position: relative;
+    top: 2px;
+    left: -1px;
+  }
+}
+
+.social_notifications_container,
+.chats_container,
+.signature_notifications_container,
+.wallet_notifications_container,
+.email_notifications_container,
+.drive_notifications_container {
+  &:focus {
+    outline: none;
+  }
+}
+
+.signature_notifications_container,
+.wallet_notifications_container,
+.email_notifications_container,
+.drive_notifications_container {
+  position: relative;
+}
+
+.signature_notification_icon,
+.bell_icon,
+.wallet_notification_icon,
+.drive_notification_icon,
+.email_notification_icon {
+  cursor: pointer;
+  margin-right: 15px;
+  height: 15px;
+  width: 15px;
+}
+
+.wallet_notification_icon {
+  background: url(../../img/Icons/wallet-notification.svg);
+}
+
+.drive_notification_icon {
+  background: url(../../img/Icons/drive-notification.svg);
+}
+
+.email_notification_icon {
+  background: url(../../img/Icons/email-notification.svg);
+}
+
+.signature_notification_icon {
+  background: url(../../img/Icons/signature_notification.svg);
+}
+
+.bell_icon_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bell_icon {
+  background: url(../../img/Icons/bell.svg);
+  margin-right: 0;
+  margin-left: 7px;
+}
+
+.chevron_right {
+  background: url(../../img/Icons/chevron-right.svg);
+  height: 7px;
+  width: 4px;
+}
+
+.chats_container {
+  margin-right: 15px;
+  position: relative;
+
+  > i {
+    display: block;
+    height: 15px;
+    width: 15px;
+    background: url("../../img/Icons/chat-sm.svg");
+    cursor: pointer;
+
+    &:hover {
+      background: url("../../img/Icons/chat-sm-hover.svg");
+    }
+  }
+}
+
+.social_notifications_container {
+  position: relative;
+
+  > i {
+    margin-right: 10px;
+    display: block;
+    height: 15px;
+    width: 15px;
+    background: url("../../img/Icons/social-notification.svg");
+    cursor: pointer;
+  }
+
+  .bubble {
+    top: 9px;
+  }
+
+  .clickNotification {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: -4px;
+  }
+
+  .triangle {
+    left: 297px;
+  }
+}
+
+.divider_left,
+.divider_right {
+  border-left: 1px solid #f6f6f6;
+  height: 16px;
+  align-self: center;
+}
+.divider_left {
+  margin-left: 15px;
+}
+.divider_right {
+  margin-right: 15px;
+}
+
+.triangle {
+  background-image: url(../../img/Icons/triangle.svg);
+  display: inline-block;
+  height: 10px;
+  width: 20px;
+  position: absolute;
+  top: -10px;
+}
+
+.dropdown-messages {
+  top: 32px;
+  left: -280px;
+
+  .wrapper-avatars {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 50%;
+    background: white;
+    overflow: hidden;
+
+    img {
+      height: 48px;
+      width: 48px;
+    }
+
+    .grid-half {
+      height: 45px;
+      width: 22.5px;
+      margin-left: -1px;
+      overflow: hidden;
+      display: block;
+
+      &:first-child {
+        border-right: 1px solid #fff;
+      }
+
+      &:nth-child(2) {
+        margin-left: 0.5px;
+        width: 22px;
+      }
+
+      img {
+        margin-left: -11px;
+      }
+    }
+    .grid-half-1 {
+      width: 27.5px;
+    }
+
+    .grid-half-2 {
+      width: 17px !important;
+
+      .grid-fourth img {
+        margin-left: -3px;
+      }
+    }
+
+    .grid-fourth {
+      height: 22.5px;
+      width: 22.5px;
+
+      &:first-child {
+        border-bottom: 1px solid #fff;
+        overflow: hidden;
+        margin-top: -1px;
+      }
+
+      &:nth-child(2) {
+        margin-top: 0.5px;
+        height: 22px;
+      }
+
+      img {
+        width: 22.5px;
+        height: 22.5px;
+        margin-left: 0;
+      }
+    }
+  }
+  .notification-box {
+    span {
+      position: absolute;
+      font-size: 13px;
+    }
+
+    .message {
+      top: 35px;
+      left: 70px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 275px;
+    }
+
+    .date {
+      right: 9px;
+      top: 13px;
+      color: #8c9097;
+      width: 35px;
+
+      &:hover {
+        ~ .tooltip-date {
+          display: block;
+        }
+      }
+    }
+
+    .tooltip-date {
+      display: none;
+      position: absolute;
+      right: 5px;
+      top: 30px;
+      background: #333;
+      color: #fff;
+      padding: 3px 6px;
+      font-size: 13px;
+      z-index: 2;
+    }
+  }
+
+  .triangle {
+    left: 277px;
+  }
+}
+
+.infouser {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  span {
+    font-size: 13px;
+  }
+
+  img {
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+}
+
+.profile-menu {
+
+  .btn-toolbar {
+    margin-left: 0;
+
+    .dropdown {
+      margin-left: 0;
+    }
+  }
+
+  .triangle {
+    background-image: url(../../img/Icons/triangle.svg);
+    display: inline-block;
+    height: 10px;
+    width: 20px;
+    position: absolute;
+    top: -10px;
+    left: 158px;
+  }
+
+  button {
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      background: url("../../img/Icons/menu-down.svg");
+      width: 24px;
+      height: 24px;
+      display: block;
+    }
+  }
+
+  .dropdown-menu-right {
+    top: 43px;
+    right: -10px;
+  }
+
+  a {
+    &:hover {
+      background: $default-bg;
+      color: $default-color;
+    }
+  }
+}
+.header_auth_buttons {
+  display: flex;
+  width: 150px;
+  margin-left: auto;
+  align-items: center;
+
+  button {
+    cursor: pointer;
+    background: $brand;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 2px;
+    border: 0;
+    text-align: center;
+    padding: 6px 12px;
+    line-height: 16px;
+    font-weight: 500;
+  }
+
+  .sign_in_button {
+    margin-left: 10px;
+  }
+
+  .sign_up_button {
+    background-color: #5c9348;
+
+    &:hover {
+      background-color: #7ead6d;
+    }
+  }
+}
+/* -- UserButtons End  -- */
+
+
+/* -- Header-Channel -- */
+.name-channel {
+  font-size: 18px;
+  color: $gray;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 190px;
+  align-self: center;
+  position: relative;
+  top: 2px;
+
+  &:before {
+    content: "";
+    height: 26px;
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 1px solid $border-color;
+    margin-left: 15px;
+    margin-right: 20px;
+    margin-bottom: 8px;
+  }
+}
+/* -- Header-Channel  -- */
+
+.left-arrow {
+  background: url("../../img/Icons/left.png");
+  width: 32px;
+  height: 32px;
+  position: relative;
+  top: 10px;
+  left: 13px;
+  cursor: pointer;
+  z-index: 0;
+}
+
+.right-arrow {
+  background: url("../../img/Icons/right.png");
+  width: 32px;
+  height: 32px;
+  position: relative;
+  top: 10px;
+  right: 5px;
+  cursor: pointer;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .extension {
+    display: none;
+  }
+
+  .header-navigation {
+    right: 45px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .search-field input {
+    //width: 325px;
+  }
+}

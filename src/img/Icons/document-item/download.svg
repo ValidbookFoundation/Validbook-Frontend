@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="14.823529"
+   height="18"
+   viewBox="0 0 14.823529 18"
+   id="svg910"
+   sodipodi:docname="download.svg"
+   inkscape:version="0.92.2 (unknown)">
+  <metadata
+     id="metadata916">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs914" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     id="namedview912"
+     showgrid="false"
+     inkscape:zoom="9.8333333"
+     inkscape:cx="-10.033898"
+     inkscape:cy="8"
+     inkscape:window-x="1366"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg910">
+    <sodipodi:guide
+       position="-5,-4"
+       orientation="0,24"
+       id="guide5150"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="19,-4"
+       orientation="-24,0"
+       id="guide5152"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="19,20"
+       orientation="0,-24"
+       id="guide5154"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-5,20"
+       orientation="24,0"
+       id="guide5156"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <path
+     d="M 0,18 H 14.823529 V 15.882353 H 0 M 14.823529,6.3529412 H 10.588235 V 0 H 4.2352941 V 6.3529412 H 0 l 7.411765,7.4117648 z"
+     id="path908"
+     inkscape:connector-curvature="0"
+     style="stroke-width:1.05882359;fill:#787878;fill-opacity:1" />
+</svg>

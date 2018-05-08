@@ -1,0 +1,30 @@
+.statements_secondary_header {
+  width: 100%;
+  height: 46px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+  display: flex;
+  background: #fafafa;
+  position: fixed;
+  z-index: 5;
+  top: 52px;
+
+  .statements_navigation {
+    margin: 0 auto;
+
+    a {
+      color: #555;
+      font-size: 16px;
+      padding-left: 15px;
+      padding-right: 15px;
+      line-height: 46px;
+      height: 43px;
+      display: inline-block;
+    }
+
+    a.active {
+      cursor: pointer;
+      text-decoration: none;
+      border-bottom: 3px solid rgb(25, 118, 210);
+    }
+  }
+}

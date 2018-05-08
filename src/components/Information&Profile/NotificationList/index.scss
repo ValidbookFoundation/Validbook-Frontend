@@ -1,0 +1,52 @@
+@import '../../../theme/vars';
+
+/* -=== ScrollBar ===- */
+//.scrollBar {
+//  &::-webkit-scrollbar {
+//    width:7px;
+//  }
+//  &::-webkit-scrollbar-thumb {
+//    border-radius: 5px;
+//  }
+//  &::-webkit-scrollbar-thumb:hover {
+//    border-color: #555;
+//    background-color: #777;
+//  }
+//  &::-webkit-scrollbar-track {
+//    border-width:0;
+//    background-color: transparent;
+//  }
+//  &::-webkit-scrollbar-track:hover {
+//    background-color: #cecece;
+//  }
+//}
+/* -=== ScrollBar ===- */
+
+.notifications {
+  width: 600px;
+  height: 100%;
+  margin: 70px auto 0;
+
+  .additional-title {
+    margin: 0 -10px;
+    border-bottom: 0;
+    padding: 8px 20px 0 20px;
+  }
+
+  .notification-box {
+    padding-bottom: 5px;
+    height: 100%;
+    width: 600px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 5px 1px $border-color;
+  }
+
+  .notification-box-list {
+    ul {
+      max-height: 95%;
+      overflow: hidden;
+      // max-height: 77%;
+    }
+  }
+}

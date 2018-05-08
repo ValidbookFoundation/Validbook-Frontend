@@ -1,0 +1,57 @@
+/**
+ *
+ *  Define scss variables here.
+ *
+ */
+ 
+$sprite: url('../img/Icons/main_sprite.png') no-repeat;
+
+/* === Colors === */
+$brand: #1870c8;
+$brand-hover: #2887D2;
+$link-color: #2962FF;
+
+$default-bg: #EEE;
+$bg-hover: #E1E1E1;
+
+$default-color: #333;            //main text color
+
+$gray-light: #AFB4BD;            //some icons and text
+$gray-light-hover: #8C9097;
+$gray: #8F8F8F;                  //some icons and accent border
+$border-color: #D9D9D9;
+$border-hover-color: #B8B8B8;
+/* === Colors End === */
+
+
+/* === Fonts === */
+  //Main fonts
+$font-bold: "Roboto Bold", Arial, sans-serif;
+$font-medium: "Roboto Medium", Arial, sans-serif;
+
+  //Secondory fonts
+$font-Hind: "Hind", Arial, sans-serif;
+$font-Montserrat: "Montserrat";
+/* === Fonts End === */
+
+/* -=== ScrollBar ===- */
+.scrollBar {
+  &::-webkit-scrollbar {
+    width:7px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    border-color: #555;
+    background-color: #777;
+  }
+  &::-webkit-scrollbar-track {
+    border-width:0;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-track:hover {
+    background-color: #cecece;
+  }
+}
+/* -=== ScrollBar ===- */

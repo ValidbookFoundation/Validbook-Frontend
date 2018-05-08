@@ -1,0 +1,49 @@
+.wallet_page {
+  width: 890px;
+  
+  .operations {
+    list-style-type: none;
+
+    li {
+      color: #777;
+      font-size: 13px;
+    }
+  }
+
+  a {
+    color: #777;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .md-card-title {
+    h2 {
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+
+  .kudos {
+    text-align: center;
+    margin-bottom: 15px;
+
+    & :first-child {
+      font-size: 72px;
+      color: #1870c8;
+      line-height: 72px;
+    }
+
+    & :last-child {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  .custodial-container {
+    display: flex;
+    margin-bottom: 25px;    
+  }
+}

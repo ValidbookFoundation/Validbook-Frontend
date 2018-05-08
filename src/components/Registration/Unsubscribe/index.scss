@@ -1,0 +1,20 @@
+@import "../../../theme/vars";
+
+.unsubscribe {
+  width: 525px;
+  margin: 130px auto 0;
+  background: #fff;
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  padding: 20px;
+
+  hr {
+    margin: 15px -20px 25px;
+  }
+  a {
+    color: $link-color;
+    &:hover {
+      color: $link-color;
+    }
+  }
+}

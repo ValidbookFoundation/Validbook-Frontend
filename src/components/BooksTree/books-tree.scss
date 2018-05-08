@@ -1,0 +1,109 @@
+@import "../../theme/vars";
+
+.rst__tree {
+  .rst__virtualScrollOverride {
+    overflow-x: hidden !important;
+  }
+}
+
+.rstcustom__node {
+  cursor: pointer !important;
+
+  button {
+    top: 50%;
+    // left: 10.5px !important;
+  }
+
+  .rstcustom__rowWrapper {
+    cursor: pointer;
+    display: flex;
+  }
+
+  .rstcustom__collapseButton:after,
+  .rstcustom__expandButton:after {
+    content: "";
+    position: absolute;
+    transform-origin: 9px 2px;
+    border: solid transparent 7px;
+    border-left-width: 4px;
+    border-right-width: 4px;
+    border-top-color: gray;
+  }
+
+  .rstcustom__collapseButton:after {
+    transform: translate3d(20%, -20%, 0);
+  }
+
+  .rstcustom__expandButton:after {
+    transform: translate3d(-50%, -50%, 0) rotateZ(-90deg);
+  }
+
+  .rstcustom__collapseButton:focus::after,
+  .rstcustom__expandButton:focus::after {
+    filter: none;
+  }
+
+  .rstcustom__rowLabel {
+    .tree_item {
+      display: flex;
+
+      span {
+        display: block;
+      }
+
+      .book_icon {
+        background: $sprite;
+        content: "";
+        background-position: -86px -515px;
+        height: 15px;
+        width: 16px;
+        margin-right: 8px;
+        position: relative;
+        top: 3px;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: rgb(197, 197, 197);
+  }
+}
+
+.save_book_tree {
+  .rstcustom__row,
+  .rstcustom__rowContents {
+    position: static;
+  }
+
+  .rstcustom__node:hover {
+    background-color: transparent;
+  }
+}
+
+.sbox_book_tree {
+  .md-selection-control-container {
+    cursor: pointer;
+    height: 20px;
+    margin-right: 6px;
+  }
+
+  .md-selection-control-label {
+    margin-bottom: 0;
+  }
+
+  .md-fake-btn {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+  }
+
+  .md-icon {
+    font-size: 20px;
+  }
+
+  .tree_item {
+    position: relative;
+    left: -3px;
+    width: 177px;
+  }
+}

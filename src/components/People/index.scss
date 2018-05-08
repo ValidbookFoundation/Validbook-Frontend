@@ -1,0 +1,66 @@
+@import '../../theme/vars';
+
+.people-lists {
+  // margin: 0 auto;
+  // max-width: 900px;
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.user-card {
+  width: 180px;
+  height: 215px;
+  background: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  padding: 10px 10px;
+  margin: 0 30px 30px 0;
+  position: relative;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  > a {
+    color: $default-color;
+
+    > div {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
+      max-height: 40px;
+      height: 40px;
+      text-align: center;
+      font-weight: 500;
+    }
+  }
+
+  img {
+    margin: 14px auto 12px;
+    display: block;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .user-card {
+    margin: 0 20px 30px 20px;
+  }
+}
+
+.graph_container {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #a7a3a3;
+
+  hr {
+    border-top: 1px solid #a7a3a3;
+  } 
+}

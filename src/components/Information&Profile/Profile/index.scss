@@ -1,0 +1,355 @@
+@import '../../../theme/vars';
+@import '../_additional';
+
+textarea.form-control {
+  min-height: 40px;
+}
+
+.profile-label {
+  width: 100px;
+  float: left;
+}
+
+.profile-element-wrapper {
+  width: 375px;
+  float: left;
+  margin-top: 20px;
+
+  .form-control {
+    height: 25px;
+    width: 96%;
+    padding: 4px 12px;
+  }
+
+  .profile-form-select {
+    height: 25px;
+    box-sizing: content-box;
+  }
+
+  .profile-form-select-small {
+     width: 63px;
+    //  position: absolute;
+    //  top: 20px;
+  }
+}
+
+
+.profile-form-birth-date {
+  display: flex;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.profile-form-birth-year {
+  //margin: -20px 0;
+}
+
+.profile-wrap-form {
+
+  .profile-wrap-btn {
+    margin-bottom: 10px;
+  }
+}
+
+
+
+.profile-delete {
+  font-size: 12px;
+  line-height: 32px;
+}
+
+
+/* -- Notifications Start  -- */
+
+.notification-head {
+  padding: 20px 20px 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 500;
+}
+
+.notification-head-email,
+.notification-head-web {
+  position: relative;
+}
+
+.notification-head-email {
+  right: 70px;
+}
+
+.notification-head-web {
+  right: 10px;
+}
+
+.notification-wrap {
+  input[type="checkbox"] + label span {
+    margin-top: 4px;
+  }
+}
+
+.notification-checkbox-element {
+  width: 15px;
+}
+
+
+.notification-line {
+  display: flex;
+  position: relative;
+  border-top: 1px solid #f5f5f5;
+  padding: 13px 10px;
+  margin: 0 20px;
+}
+
+.notification-checkbox {
+  display: flex;
+  position: absolute;
+  right: 10px;
+}
+
+.form-notification {
+  display: flex;
+
+  .checkbox {
+    margin: 0;
+  }
+}
+
+.notification-checkbox-email {
+  position: relative;
+  right: 75px;
+}
+
+.notifications-updates {
+  border-radius: 0;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #f5f5f5;
+  margin: 0 20px;
+  padding: 30px 10px 25px 10px;
+  font-weight: bold;;
+}
+
+.notifications-update-line {
+  display: flex;
+  padding: 13px 10px;
+  margin: 0 20px;
+
+  span {
+    margin-left: 15px;
+  }
+}
+/* -- Notifications End  -- */
+
+/* -- password Start  -- */
+.password-element-wrapper {
+  width: 290px !important;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.password-label {
+  width: 150px;
+  float: left;
+  font-weight: 500;
+}
+
+.password-forgot {
+  width: 300px;
+  margin-left: 180px;
+  margin-top: 3px;
+  font-size: 13px;
+  color: $gray;
+
+  &:hover {
+    text-decoration: underline;
+    color: $gray;
+  }
+}
+
+.password-wrap-form {
+
+  .additional-hr {
+    margin: 30px 7px 20px;
+  }
+
+  .password-wrap-btn {
+    padding-top: 5px;
+    margin-bottom: 40px;
+  }
+}
+
+
+
+/* === Privacy  ===  */
+
+.privacy-wrap {
+  padding: 0 10px 15px 10px;
+
+  .dropdown-menu {
+    position: static;
+    margin-top: 25px;
+    margin-left: 20px;
+    float: none;
+    border: none;
+    box-shadow: none;
+  }
+
+  .btn-default {
+    border: none;
+    font-weight: bold;;
+  }
+
+  .btn-toolbar {
+    padding-top: 10px;
+  }
+}
+
+
+.privacy-activity-list {
+  li {
+    float: left;
+  }
+}
+
+.privacy-books-tree {
+  .booksTree_title {
+    display: none;
+  }
+
+  .wrap_booksTree {
+    position: relative;
+    left: -25px;
+  }
+}
+
+.privacy-pure-btn {
+  text-align: left !important;
+  white-space: pre-wrap !important;
+}
+
+/* === Privacy End  ===  */
+
+/* === Delete Acount   ===  */
+.delete-account-content {
+
+  .additional-hr {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+
+.delete-account-regret {
+  padding: 20px 20px 0 20px;
+
+  p {
+    padding-bottom: 10px;
+  }
+}
+
+.delete-account-before {
+  padding: 0 20px 20px 20px;
+
+  p {
+    padding-top: 15px;
+  }
+
+  ul {
+    padding: 20px 20px 0 20px;
+  }
+}
+
+.delete-account-element-wrapper {
+  width: 250px;
+  margin-top: 20px;
+
+  .delete-account-select {
+    height: 25px;
+  }
+}
+
+
+.submit-btn {
+    cursor: pointer;
+    background: $brand;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 2px;
+    border: 0;
+    height: 30px;
+    margin-top: 15px;
+    align-self: flex-end;
+}
+
+.delete-account-btn {
+  width: 220px;
+}
+
+
+/* === Delete Acount  End  ===  */
+
+
+
+@media all and (max-width: 991px) {
+
+  .additional-wrap {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .additional-mnu {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .additional-content {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .profile-element-wrapper {
+    width: 100%;
+    margin-top: 15px;
+
+    .form-control {
+      width: calc(100% - 25px);
+    }
+
+    .profile-form-select-small {
+      width: 63px;
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+  .profile-element-wrapper {
+    .profile-form-select-small {
+      padding: 4px 6px;
+    }
+  }
+
+  .profile-label {
+    width: 95px;
+  }
+
+  .birth-visibility {
+    left: 190px;
+  }
+
+
+  .notification-head-email {
+    right: 50px;
+  }
+
+  .notification-checkbox-email {
+    right: 55px;
+  }
+
+  .notification-line {
+    span {
+      max-width: 70%;
+    }
+  }
+
+
+}

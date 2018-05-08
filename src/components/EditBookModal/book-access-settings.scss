@@ -1,0 +1,62 @@
+.specific_people {
+  .users_container {
+    position: relative;
+    width: 100%;
+    border: 1px solid #dbdbdb;
+    padding: 5px;
+
+    input {
+      width: 100%;
+      border: none;
+
+      &:focus {
+        outline: 0 none;
+      }
+    }
+  }
+
+  .available_users_list {
+    position: absolute;
+    background: #fff;
+    z-index: 10;
+    width: 345px;
+    overflow: auto;
+    left: 0;
+    border: 1px solid #dbdbdb;
+    border-top: none;
+  }
+
+  .available_users_list {
+    padding: 10px 0;
+  }
+
+  .available_user {
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+
+    img {
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    &:hover {
+      background-color: rgb(212, 212, 212);
+    }
+  }
+
+  .selected_users_list {
+    .md-icon {
+      font-size: 20px;
+    }
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .md-chip {
+    margin: 0 3px 3px 0;
+  }
+}

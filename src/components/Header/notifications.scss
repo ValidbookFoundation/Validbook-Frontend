@@ -1,0 +1,134 @@
+@import "../../theme/vars";
+
+.dropdown-common {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  width: 430px;
+  position: absolute;
+}
+
+.dropdown-notifications {
+  top: 34px;
+  left: -283px;
+
+  .triangle {
+    left: 280px;
+  }
+}
+.notification-box {
+  padding: 5px 10px 2px;
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      color: $link-color;
+      font-size: 12px;
+      padding-top: 5px;
+      cursor: pointer;
+
+      &:hover {
+        color: $link-color;
+        text-decoration: underline;
+      }
+    }
+
+    i {
+      padding: 0 5px;
+    }
+
+    h4 {
+      font-weight: 500;
+      padding-top: 5px;
+      font-size: 12px;
+    }
+  }
+
+  hr {
+    margin: 0 -10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+  ul {
+    max-height: 465px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0 -10px;
+
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background-color: #aaa;
+      }
+    }
+    @extend .scrollBar;
+
+    a {
+      color: #333;
+      &:link {
+        text-decoration: none;
+        color: #333;
+        display: block;
+      }
+    }
+  }
+
+  li {
+    padding: 10px 15px;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 1px solid $default-bg;
+    display: flex;
+
+    &:hover {
+      background: #eee !important;
+    }
+
+    .notification-content {
+      display: flex;
+
+      img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+      }
+
+      .notification-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h6 {
+          margin-top: 5px;
+          margin-left: 10px;
+          font-size: 13px;
+          font-weight: 500;
+          width: 333px;
+
+          b {
+            font-weight: bold;
+            padding-right: 5px;
+          }
+
+          span {
+            padding: 0 5px;
+            font-weight: 400;
+          }
+
+          a {
+            font-weight: 500;
+          }
+        }
+
+        p {
+          margin-left: 10px;
+          color: $gray-light-hover;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
